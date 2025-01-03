@@ -64,14 +64,14 @@ const projects = [
 ];
 export function AppSidebar() {
   const pathname = usePathname();
-  const {open} = useSidebar();
+  const { open } = useSidebar();
   return (
     <Sidebar collapsible="icon" variant="floating">
       <SidebarHeader>
         <div className="flex items-center gap-2">
           <Image src="/logo.png" alt="logo" width={40} height={40} />
           {open && (
-            <h1 className="text-xl font-bold text-primary/80">RepoBot AI</h1>
+           <h1 className="text-xl font-bold text-primary/80" style={{color: "black"}}>RepoBot AI</h1>
           )}
         </div>
       </SidebarHeader>
@@ -127,14 +127,16 @@ export function AppSidebar() {
               })}
               <div className="h-2"></div>
 
-              <SidebarMenuItem>
-                <Link href="/create">
-                  <Button size="sm" variant={"outline"} className="w-fit">
-                    <Plus />
-                    Create Project
-                  </Button>
-                </Link>
-              </SidebarMenuItem>
+              {open && (
+                <SidebarMenuItem>
+                  <Link href="/create">
+                    <Button size="sm" variant={"outline"} className="w-fit">
+                      <Plus />
+                      Create Project
+                    </Button>
+                  </Link>
+                </SidebarMenuItem>
+              )}
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
