@@ -1,5 +1,6 @@
 import { z } from "zod"
 import { createTRPCRouter, protectedProcedure } from "../trpc"
+import { pollCommits } from "@/lib/github"
 
 export const projectRouter = createTRPCRouter({
   createProject: protectedProcedure.input(
@@ -21,6 +22,11 @@ export const projectRouter = createTRPCRouter({
           },
         },
       })
+       try {
+      await pollCommits(project.id)
+    } catch (error) {
+      console.error("Failed to poll commits:", error)
+    }
     return project
   }),
   getProjects: protectedProcedure.query(async ({ctx}) => {
