@@ -113,7 +113,7 @@ export function AppSidebar() {
                       <div>
                         <div
                           className={cn(
-                            "flex size-6 items-center justify-center rounded-sm border bg-white text-sm text-primary",
+                            "flex items-center justify-center rounded-sm border bg-white text-sm text-primary px-1",
                             { "bg-primary text-white": true },
                           )}
                         >
