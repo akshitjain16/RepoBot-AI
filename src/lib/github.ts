@@ -31,7 +31,7 @@ export const getCommitsHashes = async (githubUrl: string): Promise<Response[]> =
         commitHash : commit.sha as string,
         commitMessage : commit.commit.message ?? "",
         commitAuthorName : commit.commit?.author?.name ?? "",
-        commitAuthorAvatar : commit.commit?.author?.avatar_url ?? "",
+        commitAuthorAvatar : commit.author?.avatar_url ?? "",
         commitDate : commit.commit?.author?.date ?? ""
     }))
 }
