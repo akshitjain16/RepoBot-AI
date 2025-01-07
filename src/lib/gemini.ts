@@ -11,6 +11,7 @@ export const aiSummarizeCommit = async (diff: string) => {
   const response = await model.generateContent([
     `you are an expert programmer, and you are trying to summarize a git diff.
     Reminders about the git diff format:
+    
     For every file, there are a few metadata lines, like (for example):
     \`\`\`
     diff --git a/lib/index.js b/lib/index.js

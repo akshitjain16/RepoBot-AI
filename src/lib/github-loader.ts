@@ -10,7 +10,7 @@ export const loadGithubRepo = async (githubUrl: string , githubToken?: string) =
         ignoreFiles: ['package-lock.json', 'yarn.lock', '.DS_Store', 'pnpm-lock.yaml'],
         recursive: true,
         unknown:'warn',
-        maxConcurrency: 5
+        maxConcurrency: 5 
 
     })
     const docs = await loader.load()

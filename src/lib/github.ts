@@ -59,7 +59,7 @@ export const pollCommits = async (projectId: string) => {
                 commitAuthorName: unProcessedCommits[index]!.commitAuthorName,
                 commitAuthorAvatar: unProcessedCommits[index]!.commitAuthorAvatar,
                 commitDate: unProcessedCommits[index]!.commitDate,
-                summary
+                summary: summary
             }
         })
     });
@@ -74,7 +74,8 @@ async function summarizeCommits(githubUrl: string, commitHashes: string) {
             Accept: "application/vnd.github.v3.diff"
         }
     });
-    return await aiSummarizeCommit(data) || "";
+    const summary = await aiSummarizeCommit(data);
+    return summary || "";
 }
 
 
