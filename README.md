@@ -1,6 +1,6 @@
 # RepoBot AI
 
-![Logo](https://example.com/logo.png)
+![Logo](https://e7.pngegg.com/pngimages/914/758/png-clipart-computer-icons-logo-github-github-logo-logo-computer-program-thumbnail.png)
 
 RepoBot AI is an intelligent assistant designed to help developers navigate and understand their GitHub repositories. By leveraging natural language processing and machine learning, RepoBot AI can answer questions about your codebase, explain complex functions, and provide insights into your project structure.
 
@@ -94,7 +94,7 @@ Follow these instructions to get RepoBot AI up and running on your local machine
 
 ## Authors
 
-* **Your Name** - *Initial work* - [YourGitHubProfile](https://github.com/akshitjain16)
+* **Akshit Jain** - *Initial work* -(https://github.com/akshitjain16)
 
 ## Acknowledgements
 
