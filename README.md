@@ -37,33 +37,39 @@ Follow these instructions to get RepoBot AI up and running on your local machine
 ### Installation
 
 1. Clone the repository:
-   
+   ```
    git clone https://github.com/akshitjain16/repobot-ai.git
+   ```
    
 
 2. Navigate to the project directory:
    
+   ```
    cd repobot-ai
+   ```
    
 
 3. Install the required dependencies:
-   
+   ```
    npm install
+   ```
    
 
 4. Set up your environment variables:
    - Create a `.env` file in the root directory
    - Add the following variables:
-     
+     ```
      DATABASE_URL=your_database_connection_string
      GITHUB_CLIENT_ID=your_github_oauth_client_id
      GITHUB_CLIENT_SECRET=your_github_oauth_client_secret
      NEXTAUTH_SECRET=your_nextauth_secret
+     ```
      
 
 5. Start the development server:
-   
+   ```
    npm run dev
+   ```
    
 
 ## Usage
