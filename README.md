@@ -1,114 +1,97 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
-</p>
+# RepoBot AI
 
-<h3 align="center">RepoBot AI</h3>
+![Logo](https://example.com/logo.png)
 
-<div align="center">
+RepoBot AI is an intelligent assistant designed to help developers navigate and understand their GitHub repositories. By leveraging natural language processing and machine learning, RepoBot AI can answer questions about your codebase, explain complex functions, and provide insights into your project structure.
 
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-
-</div>
-
----
-
-<p align="center"> Few lines describing your project.
-    <br> 
-</p>
-
-## 📝 Table of Contents
+## Table of Contents
 
 - [About](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
 - [Usage](#usage)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
+- [Built Using](#built-using)
 - [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
+- [Acknowledgements](#acknowledgements)
 
-## 🧐 About <a name = "about"></a>
+## About
 
-Write about 1-2 paragraphs describing the purpose of your project.
+RepoBot AI is a powerful tool that bridges the gap between developers and their codebase. It uses advanced AI techniques to analyze your GitHub repositories and provide intelligent responses to your queries. Whether you're a new team member trying to understand the project structure or an experienced developer looking for quick insights, RepoBot AI is here to assist you.
 
-## 🏁 Getting Started <a name = "getting_started"></a>
+Key features:
+- Natural language interaction with your codebase
+- Quick answers to questions about your project structure and functionality
+- Code explanation and documentation assistance
+- Intelligent search across your entire repository
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+## Getting Started
+
+Follow these instructions to get RepoBot AI up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them.
+- Node.js and npm (for Next.js and tRPC)
+- A GitHub account and personal access token
 
-```
-Give examples
-```
+### Installation
 
-### Installing
+1. Clone the repository:
+   
+   git clone https://github.com/akshitjain16/repobot-ai.git
+   
 
-A step by step series of examples that tell you how to get a development env running.
+2. Navigate to the project directory:
+   
+   cd repobot-ai
+   
 
-Say what the step will be
+3. Install the required dependencies:
+   
+   npm install
+   
 
-```
-Give the example
-```
+4. Set up your environment variables:
+   - Create a `.env` file in the root directory
+   - Add the following variables:
+     
+     DATABASE_URL=your_database_connection_string
+     GITHUB_CLIENT_ID=your_github_oauth_client_id
+     GITHUB_CLIENT_SECRET=your_github_oauth_client_secret
+     NEXTAUTH_SECRET=your_nextauth_secret
+     
 
-And repeat
+5. Start the development server:
+   
+   npm run dev
+   
 
-```
-until finished
-```
+## Usage
 
-End with an example of getting some data out of the system or using it for a little demo.
+1. Connect RepoBot AI to your GitHub account using the OAuth flow provided in the application.
+2. Your connected repositories will be automatically fetched and stored.
+3. Select a project to work with. This selection is likely stored in your browser's local storage for convenience.
+4. Use the application to interact with your codebase. For example:
+   - "Show me the implementation of the `useProject` hook"
+   - "Explain the `createProject` mutation"
+   - "What does the `getCommits` function do?"
+   - "List all the API routes in this project"
 
-## 🔧 Running the tests <a name = "tests"></a>
+## Built Using
 
-Explain how to run the automated tests for this system.
+- [Next.js](https://nextjs.org/) - React Framework for the frontend
+- [tRPC](https://trpc.io/) - End-to-end typesafe APIs for the backend
+- [Prisma](https://www.prisma.io/) - Database ORM
+- [TypeScript](https://www.typescriptlang.org/) - Programming Language
+- [usehooks-ts](https://usehooks-ts.com/) - React Hooks library (specifically for `useLocalStorage`)
+- [zod](https://zod.dev/) - Schema validation library
 
-### Break down into end to end tests
+## Authors
 
-Explain what these tests test and why
+* **Your Name** - *Initial work* - [YourGitHubProfile](https://github.com/akshitjain16)
 
-```
-Give an example
-```
+## Acknowledgements
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## 🎈 Usage <a name="usage"></a>
-
-Add notes about how to use the system.
-
-## 🚀 Deployment <a name = "deployment"></a>
-
-Add additional notes about how to deploy this on a live system.
-
-## ⛏️ Built Using <a name = "built_using"></a>
-
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
-
-## ✍️ Authors <a name = "authors"></a>
-
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
-
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
