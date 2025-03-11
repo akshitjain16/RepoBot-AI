@@ -1,6 +1,6 @@
 # RepoBot AI
 
-![Logo](https://e7.pngegg.com/pngimages/914/758/png-clipart-computer-icons-logo-github-github-logo-logo-computer-program-thumbnail.png)
+![Logo](repobot.png)
 
 RepoBot AI is an intelligent assistant designed to help developers navigate and understand their GitHub repositories. By leveraging natural language processing and machine learning, RepoBot AI can answer questions about your codebase, explain complex functions, and provide insights into your project structure.
 
@@ -96,8 +96,11 @@ Follow these instructions to get RepoBot AI up and running on your local machine
 
 * **Akshit Jain** - *Initial work* -(https://github.com/akshitjain16)
 
-## Acknowledgements
+## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+- OpenAI and the creators of large language models for the underlying AI technology that powers RepoBot AI.
+- Vercel and the Next.js team for the powerful and flexible React framework.
+- tRPC contributors for the excellent type-safe API framework.
+- The Prisma team for the intuitive and efficient database ORM.
+- The creators and maintainers of usehooks-ts for providing useful React hooks.
+- Colin McDonnell and contributors for creating zod, the schema validation library.
