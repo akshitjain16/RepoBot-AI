@@ -1,6 +1,6 @@
 # RepoBot AI
 
- <img width=200px height=200px src="logo.png" alt="Project logo"></a>
+ <img width=200px height=200px src="repobot.png" alt="Project logo"></a>
 
 RepoBot AI is an intelligent assistant designed to help developers navigate and understand their GitHub repositories. By leveraging natural language processing and machine learning, RepoBot AI can answer questions about your codebase, explain complex functions, and provide insights into your project structure.
 
